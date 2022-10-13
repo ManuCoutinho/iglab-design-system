@@ -6,7 +6,7 @@ on:
       - main
 
 jobs:
-  build-&-deploy-ghpages:
+  build-and-deploy-ghpages:
     runs-on: ubuntu-latest
 
     steps:
