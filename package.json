@@ -18,7 +18,7 @@
   },
   "lint-staged": {
     ".{ts,tsx}": [
-      "npm run lint --fix"
+      "eslint src --fix"
     ],
     ".{json,md}": [
       "prettier --write"
