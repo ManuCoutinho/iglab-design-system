@@ -11,11 +11,15 @@ export const Heading: React.FC<HeadingProps> = ({
   const Component = asChild ? Slot : 'h2'
   return (
     <Component
-      className={clsx('text-gray-100 font-sans font-bold', {
-        'text-lg': size === 'sm',
-        'text-xl': size === 'md',
-        'text-2xl': size === 'lg'
-      }, className)}
+      className={clsx(
+        'text-gray-100 font-sans font-bold',
+        {
+          'text-lg': size === 'sm',
+          'text-xl': size === 'md',
+          'text-2xl': size === 'lg'
+        },
+        className
+      )}
     >
       {children}
     </Component>

@@ -1,6 +1,6 @@
-import { LogoProps } from "./types"
+import { LogoProps } from './types'
 
-export const Logo: React.FC<LogoProps> = (props) =>{
+export const Logo: React.FC<LogoProps> = (props) => {
   return (
     <svg
       width={106}

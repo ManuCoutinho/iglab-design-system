@@ -8,10 +8,9 @@ import { Input } from '../../components/Input'
 import { Logo } from '../../components/Logo'
 import { Text } from '../../components/Text'
 
-
 export const Home: React.FC = () => {
   const [authenticated, setIsAuthenticated] = useState(false)
-  const handleSignIn  = async (event: FormEvent) => {
+  const handleSignIn = async (event: FormEvent) => {
     event.preventDefault()
     await axios.post('/session', {
       email: 'email.teste@email.com',
@@ -26,7 +25,10 @@ export const Home: React.FC = () => {
         <Heading size='lg'>Ignite Lab</Heading>
         <Text className='text-gray-400 mt-1'>Faça o login e comece a usar</Text>
       </header>
-      <form className='flex flex-col items-stretch w-full max-w-sm mt-10 gap-4' onSubmit={handleSignIn}>
+      <form
+        className='flex flex-col items-stretch w-full max-w-sm mt-10 gap-4'
+        onSubmit={handleSignIn}
+      >
         {authenticated && <Text size='sm'>Login realizado!</Text>}
         <label className='flex flex-col gap-4 mb-3' htmlFor='email'>
           <Text className='font-semibold'>Endereço de e-mail</Text>
@@ -61,12 +63,18 @@ export const Home: React.FC = () => {
       </form>
       <footer className='flex flex-col items-center gap-4'>
         <Text asChild size='sm'>
-          <a href='#' className='text-gray-400 underline hover:text-gray-200 transition-colors'>
+          <a
+            href='#'
+            className='text-gray-400 underline hover:text-gray-200 transition-colors'
+          >
             Esqueceu sua senha?
           </a>
         </Text>
         <Text asChild size='sm'>
-          <a href='#' className='text-gray-400 underline hover:text-gray-200 transition-colors'>
+          <a
+            href='#'
+            className='text-gray-400 underline hover:text-gray-200 transition-colors'
+          >
             Não possui conta? Crie uma agora!
           </a>
         </Text>
