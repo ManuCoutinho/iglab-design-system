@@ -11,6 +11,7 @@ export default {
     '!<rootDir>/node_modules/',
     '!**/*.d.ts',
     '!**/types.ts',
+    '!src/**/*stories*.{js,jsx,ts,tsx}',
     '!<rootDir>/out/**',
     '!<rootDir>/dist/**',
     '!<rootDir>/*.config.js',
