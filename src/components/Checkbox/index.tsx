@@ -6,6 +6,7 @@ export const Checkbox: React.FC<CheckBoxProps> = ({ ...props }) => {
   return (
     <CheckboxPrimitive.Root
       {...props}
+      title='checkbox'
       className='w-6 h-6 p-[2px] bg-gray-800 rounded transition focus-within:ring focus-within:ring-cyan-500 focus-within:outline-cyan-300'
     >
       <CheckboxPrimitive.Indicator asChild>

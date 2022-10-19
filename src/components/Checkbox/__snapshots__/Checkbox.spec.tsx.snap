@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Checkbox/> match to snapshot 1`] = `
+<button
+  aria-checked="false"
+  class="w-6 h-6 p-[2px] bg-gray-800 rounded transition focus-within:ring focus-within:ring-cyan-500 focus-within:outline-cyan-300"
+  data-state="unchecked"
+  role="checkbox"
+  title="checkbox"
+  type="button"
+  value="on"
+/>
+`;
