@@ -26,7 +26,7 @@ export const Home: React.FC = () => {
         <Text className='text-gray-400 mt-1'>Faça o login e comece a usar</Text>
       </header>
       <form
-        className='flex flex-col items-stretch w-full max-w-sm mt-10 gap-4'
+        className='flex flex-col items-stretch px-6 w-full md:px-0 md:max-w-sm mt-10 gap-4'
         onSubmit={handleSignIn}
       >
         {authenticated && <Text size='sm'>Login realizado!</Text>}
